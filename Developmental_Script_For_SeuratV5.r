@@ -110,7 +110,7 @@ if ("Final list" %in% colnames(ss)) {
 }
 
 # pull library id
-Sample_ss <- ss %>% filter(Sample == in_sample)
+Sample_ss <- ss %>% filter(Sample_ID == in_sample)
 library_id <- Sample_ss$Library
 n_cells <- length(h5_list$matrix$barcodes)
 h5_list <- set_list_path(h5_list,
